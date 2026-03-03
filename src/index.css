@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero-bg {
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), url('/ssujen-punk.jpeg'); /* using the portrait image for hero as well if the original was missing */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .text-glow {
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+  }
+}
+
+body {
+  @apply font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300;
+}

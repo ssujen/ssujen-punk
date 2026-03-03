@@ -8,11 +8,11 @@ export default function Contact() {
         </h3>
         <div className="bg-white/5 border border-white/10 p-12 rounded-3xl backdrop-blur-sm">
           <p className="text-slate-400 mb-8 text-xl">Ready for collaboration or just want to chat about AI?</p>
-          <a className="text-3xl md:text-5xl font-bold text-white hover:text-primary transition-all break-all" href="mailto:ssujenlu@gmail.com">
-            ssujenlu@gmail.com
+          <a className="text-3xl md:text-5xl font-bold text-white hover:text-primary transition-all break-all" href="mailto:ssu@ssujen.dev">
+            ssu@ssujen.dev
           </a>
           <div className="flex justify-center flex-wrap gap-8 mt-12">
-            <a className="flex flex-col items-center gap-2 group" href="http://ssujen.com" target="_blank" rel="noreferrer">
+            <a className="flex flex-col items-center gap-2 group" href="http://ssujen.dev" target="_blank" rel="noreferrer">
               <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-primary group-hover:text-slate-900 transition-all">
                 <span className="material-icons">language</span>
               </div>

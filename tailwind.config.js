@@ -8,16 +8,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#d4af37", // A metallic gold inspired by steampunk brass
-        "background-light": "#f8fafc",
-        "background-dark": "#0f172a",
+        "primary": "#ed4572",
+        "background-light": "#f8f6f6",
+        "background-dark": "#211115",
+        "neutral-muted": "#3a2128",
+        "neutral-border": "#4a2c34",
       },
       fontFamily: {
-        display: ["Outfit", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
+        "display": ["Inter", "sans-serif"],
+        "serif": ["Playfair Display", "serif"],
       },
       borderRadius: {
-        DEFAULT: "0.5rem",
+        DEFAULT: "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
       },
     },
   },

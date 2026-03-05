@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ onBlogClick }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 glass-card border-b border-white/10 transition-all duration-300 ${scrolled ? 'py-4 h-16' : 'h-20'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-3xl font-bold tracking-tighter text-primary">ssujen.ai</span>
+          <span className="text-4xl font-bold tracking-tighter text-primary">ssujen.ai</span>
         </div>
         <div className="hidden md:flex items-center gap-8 font-medium">
           <a className="hover:text-primary transition-colors" href="#">Home</a>
@@ -25,8 +25,14 @@ export default function Navbar() {
           <a className="hover:text-primary transition-colors" href="#contact">Contact</a>
         </div>
         <div>
-          <button className="bg-primary hover:bg-opacity-90 text-background-dark font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105">
-            Resume
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              onBlogClick();
+            }}
+            className="bg-primary hover:bg-opacity-90 text-background-dark font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
+          >
+            Blog
           </button>
         </div>
       </div>

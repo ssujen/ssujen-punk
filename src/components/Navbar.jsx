@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function Navbar({ onBlogClick }) {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,15 +25,14 @@ export default function Navbar({ onBlogClick }) {
           <a className="hover:text-primary transition-colors" href="#contact">Contact</a>
         </div>
         <div>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              onBlogClick();
-            }}
-            className="bg-primary hover:bg-opacity-90 text-background-dark font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
+          <a
+            href="https://system-architect-ssujendev.web.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary hover:bg-opacity-90 text-background-dark font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
           >
-            Blog
-          </button>
+            Helper AI
+          </a>
         </div>
       </div>
     </nav>

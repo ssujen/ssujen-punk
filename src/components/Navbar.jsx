@@ -23,6 +23,7 @@ export default function Navbar() {
           <a className="hover:text-primary transition-colors" href="#projects">Projects</a>
           <a className="hover:text-primary transition-colors" href="#about">About</a>
           <a className="hover:text-primary transition-colors" href="#contact">Contact</a>
+          <a className="hover:text-primary transition-colors" href="https://ssujen-blog.web.app">Blog</a>
         </div>
         <div>
           <a
